@@ -33,6 +33,7 @@ body {
   /* O que eu fiz aqui foi agrupar todas as funções do background*/
   /*background: image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -151,4 +152,16 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+/*media queries*/
+
+@media (min-width:700px) {
+  :root {
+    --bg-url: url(./Assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./Assets/assets/bg-desktop-light.jpg);
+  }
 }
